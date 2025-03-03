@@ -12,11 +12,10 @@
 <body>
     <header>
         <img src="logo-color.png">
-        <nav>
-            <ion-icon name="menu-outline" onclick="
-                 getElementById = 'navul'
-                 "></ion-icon>
-            <ul id="navul">
+        
+        <nav id="navLinks">
+            <ion-icon name="menu-outline" onclick="showMenu()"></ion-icon>    
+            <ul>
                 <li> <a href="#"> Home </a></li>
                 <li><a href="#Aboutus">About</a> </li>
                 <li> <a href="#OurWorkProcess"> Work Process </a> </li>
@@ -59,8 +58,8 @@
 </div>
 </div>
 <!--The login and register-->
-<button class="thelogin"> <a href="login.html"> Login </a></button>
-<button class="thelogin"> <a href="register.html"> Register </a></button>
+<button class="thelogin1"> <a href="login.html"> Login </a></button>
+<button class="thelogin2"> <a href="register.html"> Register </a></button>
 </section>
 
 <!--secondsection-->
@@ -98,7 +97,7 @@
         We use cut-edge technology to carry out our operations. 
         Our data delivery, airtime purchase and wallet funding are done automatically..</p>
 
-    <button class="thelogin"> <a href="register.html"> Register </a></button>
+    <button class="thelogin2"> <a href="register.html"> Register </a></button>
 </div>
 </section>
 
@@ -427,6 +426,15 @@ updateSlider();
 <p class="copyr"> Copyrights Graciecreatives &copy; 2025</p>
 </footer>
 
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu() {
+        navLinks.style.right="0";
+    }
+    function hideMenu(){
+        navLinks.style.right= "-200px";
+    }
+</script>
 
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
